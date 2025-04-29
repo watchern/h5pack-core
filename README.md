@@ -1,3 +1,16 @@
+
+
+使用GitHub Actions将 H5 直接打包成 Android APK
+
+Github workflow action运行后下载地址
+https://nightly.link/{Owner}/{RepositoryName}/actions/runs/{RUNID}
+
+[nightly.link为GitHub Actions构建工件提供永久下载链接](https://blog.csdn.net/gitblog_00754/article/details/144784122)
+
+
+[nightly.link](https://nightly.link/)
+
+
 <br>
 
 <h1 align="center">Welcome to h5pack 👋</h1>
@@ -97,3 +110,6 @@ example 中有两个 示例。simple 版本和 docker 版本
 [B 站个人主页](https://space.bilibili.com/304985153?spm_id_from=333.1007.0.0)
 
 我有个前端交流群，平时大家一起讨论技术和交流 bug，有兴趣的小伙伴欢迎加入。（vx 添加：ysh15120）
+
+
+

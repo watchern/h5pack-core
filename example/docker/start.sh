@@ -21,5 +21,7 @@ docker cp my_container:/app/app-release.apk ./
 
 echo "清理容器..."
 docker rm -f my_container
+pwd
+ls
 
 echo "完成！"
