@@ -14,3 +14,16 @@ jobs:
         run: |
           cd example/docker
           sh start.sh
+
+      - name: 执行脚本2
+        run: |
+          pwd
+          ls
+          
+      # 步骤二的名称：将编译后的结果上传
+      - name: upload artifacts
+        # 使用预制action：上传文件，可以将执行路径打包成zip上传
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release
+          path: example/docker/app-release.apk         
