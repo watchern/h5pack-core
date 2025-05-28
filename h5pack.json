@@ -1,9 +1,9 @@
 {
-	"entry": "./dist",
-	"name": "my-app",
-	"splash":"./src/assets/splash.svg",
-	"output":"./",
-	"log":true,
-	"registry": "github",
-	"logo": "./src/assets/splash.svg"
+  "entry": "./dist",
+  "name": "my-app",
+  "splash": "./src/assets/splash.svg",
+  "output": "./",
+  "log": true,
+  "registry": "github",
+  "logo": "./src/assets/splash.svg"
 }

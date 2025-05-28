@@ -1,7 +1,7 @@
 # OSX
 #
 .DS_Store
-
+.idea
 app-release.apk
 
 node_modules/
