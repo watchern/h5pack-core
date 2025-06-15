@@ -10,8 +10,11 @@ docker run --name my_container h5pack-example sh -c "
     pwd
     echo '切换到 /app 目录...'
     cd /app
+    ls
     echo '安装 h5pack...'
     yarn add -D h5pack
+    echo '检查当前工作目录:'
+    ls
     echo '执行 h5pack...'
     npx h5pack
 " 2>&1 | tee docker_output.log
