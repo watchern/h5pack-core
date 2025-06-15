@@ -55,6 +55,7 @@
 		"@typescript-eslint/eslint-plugin": "^5.30.7",
 		"@typescript-eslint/parser": "^5.30.7",
 		"eslint": "^8.20.0",
+		"h5pack": "^0.0.6",
 		"jest-environment-jsdom": "^29.3.1",
 		"prettier": "^2.7.1",
 		"rollup": "^2.64.0",

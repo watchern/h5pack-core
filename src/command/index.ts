@@ -8,7 +8,10 @@ export function handleCommand(
 	errorHandle?: (originErrorMessage: string) => void
 ) {
 	return new Promise((resolve, reject) => {
+		console.log('rootDir',rootDir)
+		showSpinner(`stdout: ${rootDir}`)
 		const _command = baseCommand + ' ' + otherCommand.join(' ')
+		showSpinner(`stdout: ${baseCommand},${otherCommand},${rootDir}`)
 		const commandProcess = spawn(baseCommand, otherCommand, {
 			cwd: rootDir,
 		})

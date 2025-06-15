@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./assets/uni.7d554ee3.css">
+
+    <meta charset="UTF-8" />
+    <script>
+      var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+        CSS.supports('top: constant(a)'))
+      document.write(
+        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+        (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+    </script>
+    <title>智能物联房屋管理</title>
+    <!--preload-links-->
+    <script src="https://cdn.bootcdn.net/ajax/libs/vConsole/3.15.1/vconsole.min.js"></script>
+    <script>
+      // 初始化
+      var vConsole = new VConsole();
+      console.log('Hello world');
+    </script>
+
+    <!--app-context-->
+    <script type="module" crossorigin src="./assets/index-7ef9e5b0.js"></script>
+    <link rel="stylesheet" href="./assets/index-da5ad251.css">
+  </head>
+  <body>
+    <div id="app">
+      <style>
+        .loading-wrap {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 90vh;
+        }
+        .dot {
+          display: flex;
+          flex-wrap: wrap;
+          width: 36px;
+          height: 36px;
+          transform: rotate(45deg);
+          animation: ant-rotate 1.2s infinite linear;
+        }
+        .dot i {
+          margin: 2px;
+          border-radius: 50%;
+          width: 14px;
+          height: 14px;
+          background-color: #1890ff;
+          opacity: 0.3;
+          animation: ant-spin-move 1s infinite linear alternate;
+        }
+        .dot i:nth-child(2) {
+          animation-delay: 0.4s;
+        }
+        .dot i:nth-child(3) {
+          animation-delay: 0.8s;
+        }
+        .dot i:nth-child(4) {
+          animation-delay: 1.2s;
+        }
+        @keyframes ant-rotate {
+          to {
+            transform: rotate(405deg);
+          }
+        }
+        @keyframes ant-spin-move {
+          to {
+            opacity: 1;
+          }
+        }
+      </style>
+      <div class="loading-wrap">
+        <div class="dot"><i></i><i></i><i></i><i></i></div>
+      </div>
+    </div>
+    
+  </body>
+</html>
