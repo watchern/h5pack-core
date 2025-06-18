@@ -6,16 +6,16 @@ docker build -t h5pack-example .
 
 date +"%Y-%m-%d %H-%M-%S" && echo "执行打包命令..."
 docker run --name my_container h5pack-example sh -c "
-    date +"%Y-%m-%d %H-%M-%S" && echo '当前工作目录:'
+    date +\"%Y-%m-%d %H-%M-%S\" && echo '当前工作目录:'
     pwd
     ls
-    date +"%Y-%m-%d %H-%M-%S" && echo '切换到 /app 目录...'
+    date +\"%Y-%m-%d %H-%M-%S\" && echo '切换到 /app 目录...'
     cd /app
     yarn
-    date +"%Y-%m-%d %H-%M-%S" && echo '检查当前工作目录:'
+    date +\"%Y-%m-%d %H-%M-%S\" && echo '检查当前工作目录:'
     pwd
     ls
-    date +"%Y-%m-%d %H-%M-%S" && echo '执行 h5pack...'
+    date +\"%Y-%m-%d %H-%M-%S\" && echo '执行 h5pack...'
     npx h5pack
 " 2>&1 | tee docker_output.log
 
