@@ -60,10 +60,9 @@ async function copyBuildSource(
 }
 
 export async function processAndroid(rootDir: string) {
-  const yarnCommandDir = join(rootDir, './h5pack-native')
   spinner.start('🚩 ls ......')
   await handleCommand(
-    yarnCommandDir,
+    rootDir,
     'ls',
     [
       /**/
@@ -72,6 +71,7 @@ export async function processAndroid(rootDir: string) {
       spinner.stop()
       throw new PackError(GIT_CLONE_ERROR, originErrorMessage)
     })
+  const yarnCommandDir = join(rootDir, './h5pack-native')
   spinner.start('🚩 Download Source ......')
   // 克隆仓库
   await handleCommand(

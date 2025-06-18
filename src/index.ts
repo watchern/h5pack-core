@@ -1,4 +1,5 @@
 import { join } from 'path'
+import { tmpdir } from 'os'
 import { removeDir } from './file'
 import { processAndroid } from './core/native'
 import { promises } from 'fs'
@@ -9,7 +10,7 @@ let tempDir: any
 
 async function main() {
   try {
-    const rootDir = tmpdir()
+    const rootDir = process.cwd() //tmpdir()
     tempDir = join(rootDir, 'app-build')
     await promises.mkdir(tempDir, {recursive: true})
     await processAndroid(tempDir)
