@@ -39,12 +39,12 @@ export function isAvailableDir(path: string) {
 // 		console.error(error)
 // 	}
 // }
-export async function copyFilesByDir(sourceDir: string, goalDir: string) {
+export function copyFilesByDir(sourceDir: string, goalDir: string) {
 	// 创建目标文件夹,如果不存在的话
 	if (!existsSync(goalDir)) {
 		mkdirSync(goalDir, {recursive: true})
 	}
-	await removeDir(goalDir)
+	// await removeDir(goalDir)
 
 	// 遍历源文件夹下的所有内容
 	const files = readdirSync(sourceDir)
@@ -54,7 +54,7 @@ export async function copyFilesByDir(sourceDir: string, goalDir: string) {
 
 		// 如果是文件夹,递归复制
 		if (statSync(sourcePath).isDirectory()) {
-			await copyFilesByDir(sourcePath, goalPath)
+			copyFilesByDir(sourcePath, goalPath)
 		}
 		// 如果是文件,复制文件
 		else {
