@@ -9,7 +9,7 @@ let tempDir: any
 
 async function main() {
   try {
-    const rootDir = process.cwd() //tmpdir()
+    const rootDir = tmpdir()
     tempDir = join(rootDir, 'app-build')
     await promises.mkdir(tempDir, {recursive: true})
     await processAndroid(tempDir)
