@@ -1,0 +1,6 @@
+{
+  "devDependencies": {},
+  "dependencies": {
+    "h5pack": "./_packages/h5pack"
+  }
+}

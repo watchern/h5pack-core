@@ -5,3 +5,4 @@
 app-release.apk
 
 node_modules/
+/build/core.cjs.js

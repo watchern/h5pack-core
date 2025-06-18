@@ -2,7 +2,7 @@
  * AndroidRepositories 的仓库
  */
 export const AndroidRepositories = {
-	github: 'https://github.com/Jimmylxue/h5pack-native.git',
+	github: 'https://github.com/watchern/h5pack_react_native.git',
 	gitee: 'https://gitee.com/jimmyxuexue/h5pack-native.git',
 }
 

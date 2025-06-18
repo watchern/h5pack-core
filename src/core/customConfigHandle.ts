@@ -75,7 +75,10 @@ async function handleAppLogo(yarnCommandDir: string) {
 			await handleCommand(
 				yarnCommandDir,
 				'npx',
-				['iconkits', `--input=./public/logo/${fileName}`],
+				[
+					'iconkits',
+					`--input=./public/logo/${fileName}`
+				],
 				originErrorMessage => {
 					throw new Error(originErrorMessage)
 				}

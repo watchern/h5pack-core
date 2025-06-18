@@ -6,6 +6,7 @@ import { terser } from 'rollup-plugin-terser'
 import commonjs from '@rollup/plugin-commonjs'
 
 const extensions = ['.ts', '.tsx']
+const isDev = process.env.TARGET !== 'dev';
 
 const noDeclarationFiles = { compilerOptions: { declaration: false } }
 
@@ -84,6 +85,6 @@ function cjsConfig(prod, type) {
 // }
 
 export default defineConfig([
-	cjsConfig(true, 'cjs'),
+	cjsConfig(isDev, 'cjs'),
 	// processConfig(true, 'cjs'),
 ])
